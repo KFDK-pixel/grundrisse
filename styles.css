@@ -1,0 +1,48 @@
+/* Vollbild Hintergrund */
+body {
+    margin: 0;
+    padding: 0;
+    background: url("Hintergrund.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+.logo-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 180px; /* falls du es größer/kleiner willst */
+    height: auto;
+    z-index: 1000;
+}
+
+/* Allgemeine Struktur */
+h1 {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.grundriss {
+    text-align: center;
+    margin-top: 40px;
+}
+
+    .grundriss img {
+        width: 500px; /* feste Breite – beide werden gleich groß */
+        height: 350px; /* feste Höhe – gleiche Fenstergröße */
+        object-fit: cover; /* schneidet sauber zu, keine Verzerrung */
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+        /* Reinzoomen beim Hover */
+        .grundriss img:hover {
+            transform: scale(1.05);
+        }
+
+a {
+    color: #ffcccc;
+    font-weight: bold;
+}
